@@ -1,0 +1,77 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.0.M6'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+	id 'eclipse'/*or 'idea'*/
+//	id 'com.gradle.build-scan' version '2.4.2'
+}
+
+group = 'vietteldigital.webback.bankplus'
+version = '1.0.0-DEV'
+sourceCompatibility = '1.8'
+
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	
+	mavenCentral()	
+	maven { url 'https://repo.spring.io/milestone' }
+		
+	jcenter()
+	maven { url 'https://vds.repo.io/webback/libs' }
+	maven { url 'https://repo.spring.io/plugins-release' }
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	
+	/*Reduce write Entities get/set/constructor method*/
+	compileOnly 'org.projectlombok:lombok'
+	
+	runtimeOnly 'mysql:mysql-connector-java'
+	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+	annotationProcessor 'org.projectlombok:lombok'	
+		
+	compile(		
+		'io.springfox:springfox-swagger2:2.9.2',
+		'io.springfox:springfox-swagger-ui:2.9.2',
+		'org.apache.commons:commons-lang3:3.0',
+		"org.json:json:20180130",		
+		'org.mockito:mockito-junit-jupiter:2.23.0',		
+		'org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE'
+	)	
+	
+	/*test*/
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
+	
+	/*Live Reload, Automatic Restart, Properties Default, */
+	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+}
+
+test {
+	useJUnitPlatform()
+	testLogging.showStandardStreams = true
+}
+
+/* show where dependencies be stored and other cached*/
+task displayCache { doLast {configurations.compile.files.each {	println it }}}
+
+//buildScan {
+//	termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+//	termsOfServiceAgree = 'yes'
+//	server = 'http://localhost:20191'
+//	publishAlways()
+//}
