@@ -15,8 +15,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import vietteldigital.webback.bankplus.bank.controller.BankListDemoController;
-import vietteldigital.webback.bankplus.bank.service.BankListDemoService;
+import springweb.demo.bank.controller.BankListDemoController;
+import springweb.demo.bank.service.BankListDemoService;
 
 //@ExtendWith(SpringExtension.class)
 //@WebMvcTest(BankListDemoController.class)

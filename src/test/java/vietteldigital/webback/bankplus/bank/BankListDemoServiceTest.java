@@ -7,9 +7,9 @@ import java.io.IOException;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import vietteldigital.webback.bankplus.bank.model.BankListDemo;
-import vietteldigital.webback.bankplus.bank.model.BankListDemoDto;
-import vietteldigital.webback.bankplus.bank.service.BankListDemoService;
+import springweb.demo.bank.model.BankListDemo;
+import springweb.demo.bank.model.BankListDemoDto;
+import springweb.demo.bank.service.BankListDemoService;
 
 public class BankListDemoServiceTest {
 

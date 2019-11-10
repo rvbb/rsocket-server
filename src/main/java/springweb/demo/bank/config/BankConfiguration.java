@@ -1,4 +1,4 @@
-package vietteldigital.webback.bankplus.bank.config;
+package springweb.demo.bank.config;
 
 import java.util.Collections;
 
@@ -23,17 +23,17 @@ public class BankConfiguration {
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("vietteldigital.webback.bankplus.bank.controller"))
+				.apis(RequestHandlerSelectors.basePackage("webflux.demo.controller"))
 				.paths(PathSelectors.any()).build().apiInfo(apiInfo()).useDefaultResponseMessages(false);
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfo("Webback/Bankplus#bank API",
-				"Produce all APIs relate bank business logic of BankPlus project.", "1.0.0-DEV",
-				"https://vietteldigital.vn/termofservice_license",
-				new Contact("Viettel Digital Corporations - direct Viettel Group", "https://vietteldigital.vn",
+		return new ApiInfo("MSA#bank API",
+				"Demo Webflux.", "1.0.0-DEV",
+				"https://hoangnv.vn/termofservice_license",
+				new Contact("Hoangnv", "https://hoangnv.vn",
 						"api_cs@viettel.com.vn"),
-				"© Viettel Digital Corps", "https://vietteldigital.vn/termofservice_license", Collections.emptyList());
+				"©N.V HOang", "https://hoangnv.vn/termofservice_license", Collections.emptyList());
 	}
 
 	/* enabling swagger-ui part for visual documentation */

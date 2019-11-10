@@ -1,4 +1,4 @@
-package vietteldigital.webback.bankplus.bank.controller;
+package springweb.demo.bank.controller;
 
 import java.util.List;
 
@@ -16,10 +16,10 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import lombok.extern.slf4j.Slf4j;
-import vietteldigital.webback.bankplus.bank.model.FailureResponse;
-import vietteldigital.webback.bankplus.bank.model.Transaction;
-import vietteldigital.webback.bankplus.bank.model.TransactionDto;
-import vietteldigital.webback.bankplus.bank.service.TransactionService;
+import springweb.demo.bank.model.FailureResponse;
+import springweb.demo.bank.model.Transaction;
+import springweb.demo.bank.model.TransactionDto;
+import springweb.demo.bank.service.TransactionService;
 
 @Slf4j
 @RestController

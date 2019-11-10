@@ -1,4 +1,4 @@
-package vietteldigital.webback.bankplus.bank.exception;
+package springweb.demo.bank.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

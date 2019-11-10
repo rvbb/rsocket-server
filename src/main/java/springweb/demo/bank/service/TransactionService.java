@@ -1,4 +1,4 @@
-package vietteldigital.webback.bankplus.bank.service;
+package springweb.demo.bank.service;
 
 import java.util.Date;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import vietteldigital.webback.bankplus.bank.model.Transaction;
-import vietteldigital.webback.bankplus.bank.model.TransactionDto;
-import vietteldigital.webback.bankplus.bank.repo.ITransactionRepository;
+import springweb.demo.bank.model.Transaction;
+import springweb.demo.bank.model.TransactionDto;
+import springweb.demo.bank.repo.ITransactionRepository;
 
 @Service
 public class TransactionService {

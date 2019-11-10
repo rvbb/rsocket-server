@@ -1,4 +1,4 @@
-package vietteldigital.webback.bankplus.bank.model;
+package springweb.demo.bank.model;
 
 import io.swagger.annotations.ApiModelProperty;
 

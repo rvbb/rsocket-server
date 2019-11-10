@@ -2,11 +2,10 @@ plugins {
 	id 'org.springframework.boot' version '2.2.0.M6'
 	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 	id 'java'
-	id 'eclipse'/*or 'idea'*/
-//	id 'com.gradle.build-scan' version '2.4.2'
+	id 'eclipse'
 }
 
-group = 'vietteldigital.webback.bankplus'
+group = 'webflux.demo'
 version = '1.0.0-DEV'
 sourceCompatibility = '1.8'
 

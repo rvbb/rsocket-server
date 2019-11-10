@@ -1,4 +1,4 @@
-package vietteldigital.webback.bankplus.bank.repo;
+package springweb.demo.bank.repo;
 
 import java.util.Map;
 import java.util.stream.Collectors;

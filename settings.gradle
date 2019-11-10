@@ -11,4 +11,4 @@ pluginManagement {
 		}
 	}
 }
-rootProject.name = 'bank'
+rootProject.name = 'springweb-demo'

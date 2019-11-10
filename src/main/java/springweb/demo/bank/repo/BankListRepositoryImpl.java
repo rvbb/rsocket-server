@@ -1,9 +1,9 @@
-package vietteldigital.webback.bankplus.bank.repo;
+package springweb.demo.bank.repo;
 
 import java.util.List;
 import java.util.Optional;
 
-import vietteldigital.webback.bankplus.bank.model.BankListDemo;
+import springweb.demo.bank.model.BankListDemo;
 
 public class BankListRepositoryImpl implements IBankListRepository {
 	

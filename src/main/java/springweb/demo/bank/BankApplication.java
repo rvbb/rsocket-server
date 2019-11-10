@@ -1,4 +1,4 @@
-package vietteldigital.webback.bankplus.bank;
+package springweb.demo.bank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

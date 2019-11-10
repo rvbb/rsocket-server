@@ -1,4 +1,4 @@
-package vietteldigital.webback.bankplus.bank.service;
+package springweb.demo.bank.service;
 
 import java.util.Date;
 import java.util.List;
@@ -7,10 +7,10 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import vietteldigital.webback.bankplus.bank.exception.NotFoundException;
-import vietteldigital.webback.bankplus.bank.model.BankListDemo;
-import vietteldigital.webback.bankplus.bank.model.BankListDemoDto;
-import vietteldigital.webback.bankplus.bank.repo.IBankListRepository;
+import springweb.demo.bank.exception.NotFoundException;
+import springweb.demo.bank.model.BankListDemo;
+import springweb.demo.bank.model.BankListDemoDto;
+import springweb.demo.bank.repo.IBankListRepository;
 
 @Service
 public class BankListDemoService {

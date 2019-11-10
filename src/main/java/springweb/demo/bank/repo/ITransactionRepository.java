@@ -1,9 +1,9 @@
-package vietteldigital.webback.bankplus.bank.repo;
+package springweb.demo.bank.repo;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import vietteldigital.webback.bankplus.bank.model.Transaction;
+import springweb.demo.bank.model.Transaction;
 
 @Repository
 public interface ITransactionRepository extends MongoRepository<Transaction, String> {
