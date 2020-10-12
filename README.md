@@ -1,32 +1,37 @@
-<h2>Spring Web Demo</h2>
-<br>created date: 24 Sep 2019, 
-<br>by <a href="mailto:hoangnv01@gmail.com?subject=Feedback Bank APIs&body=Ask me anything">Hoang N.V</a>
+<h2>LMS#loan-service APIs</h2>
+<br>created date: 03 12, 2019, by SmartOSC Fintech | LMS team
 
 ********************************************************************************************************* 
-# Web Backend/Bankplus/Bank APIs
-Use blocking - Spring Web, Spring Data/JDBC, MongoDB and/or MySQL.
+# Technology
+	> Spring Web
+	> MongoDB
+	> MySQL
+	> Spring AOP
+	> Spring Data with 
+	> Swagger 2
+	> Spring Cloud config (client) -- next version
+	> Spring cloud bus amqp -- next version
 
+### Features
+	* Loan Management
 
-### Controller
-* [List of endpoint](springweb.demo.controller)
+### Integration
+	* Auth-Services
+	* other
 
-### Models
-
-* [Model/Entities](springweb.demo.model)
-
-### Service
-
-* [List of services](springweb.demo.model)
-
+### Docker build
+	docker build -t lms/loan-service:v1.0.0 .
+	docker tag lms/loan-service:v1.0.0 registry.developer.smartosc.vn/lms/loan-service:v1.0.0
+	docker push registry.developer.smartosc.vn/lms/loan-service:v1.0.0
 
 ### Configuration & data
 
-* [Configuration](java/main/resource/static/application.properties)
-* [SQL script](java/main/resource/static)
-* [template document - MongoDB](java/main/resource/static)
+	+ [configuration] use K8s ConfigMap
 
 ### Unit Test
-* gradle build -x test to ignore unit tests
-* [Test cases](vietteldigital.webback.bankplus.bank.model)
-<br>Browse all apis and try them at <a href="http://localhost:201901/bank/swagger-ui.html">Demo APIs</a>
-
+	gradlew build -x test to ignore unit tests
+	gradlew bootRun  --> run application
+	test one or many Class :   
+	gradlew test --tests full_package_and_ClassName
+	gradlew build test --tests *ClassName --> to test one or some classes  
+	Browse APIs via swagger: http://localhost:8080/swagger-ui.html#

@@ -1,0 +1,29 @@
+2020-10-12 17:12:59,890 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Starting LoanApplication on hoangnv2 with PID 17532 (Z:\code\mine\loan-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\loan-service)
+2020-10-12 17:12:59,892 DEBUG com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-12 17:12:59,892 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] No active profile set, falling back to default profiles: default
+2020-10-12 17:52:24,333 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Starting LoanApplication on hoangnv2 with PID 12648 (Z:\code\mine\loan-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\loan-service)
+2020-10-12 17:52:24,335 DEBUG com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-12 17:52:24,336 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] No active profile set, falling back to default profiles: default
+2020-10-12 17:54:30,183 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Starting LoanApplication on hoangnv2 with PID 5528 (Z:\code\mine\loan-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\loan-service)
+2020-10-12 17:54:30,185 DEBUG com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-12 17:54:30,186 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] No active profile set, falling back to default profiles: default
+2020-10-12 17:55:54,517 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Starting LoanApplication on hoangnv2 with PID 2736 (Z:\code\mine\loan-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\loan-service)
+2020-10-12 17:55:54,519 DEBUG com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-12 17:55:54,519 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] No active profile set, falling back to default profiles: default
+2020-10-12 18:04:28,281 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Starting LoanApplication on hoangnv2 with PID 8536 (Z:\code\mine\loan-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\loan-service)
+2020-10-12 18:04:28,283 DEBUG com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-12 18:04:28,283 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] No active profile set, falling back to default profiles: default
+2020-10-12 18:07:36,688 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Starting LoanApplication on hoangnv2 with PID 7324 (Z:\code\mine\loan-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\loan-service)
+2020-10-12 18:07:36,690 DEBUG com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-12 18:07:36,690 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] No active profile set, falling back to default profiles: default
+2020-10-12 18:08:37,893 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Starting LoanApplication on hoangnv2 with PID 16556 (Z:\code\mine\loan-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\loan-service)
+2020-10-12 18:08:37,895 DEBUG com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-12 18:08:37,895 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] No active profile set, falling back to default profiles: default
+2020-10-12 18:10:17,348 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Starting LoanApplication on hoangnv2 with PID 4916 (Z:\code\mine\loan-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\loan-service)
+2020-10-12 18:10:17,350 DEBUG com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-12 18:10:17,350 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] No active profile set, falling back to default profiles: default
+2020-10-12 18:10:22,133 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Started LoanApplication in 5.004 seconds (JVM running for 5.401)
+2020-10-12 18:18:13,655 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Starting LoanApplication on hoangnv2 with PID 7768 (Z:\code\mine\loan-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\loan-service)
+2020-10-12 18:18:13,657 DEBUG com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-12 18:18:13,657 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] No active profile set, falling back to default profiles: default
+2020-10-12 18:18:18,152 INFO com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication [main] Started LoanApplication in 4.714 seconds (JVM running for 5.1)
