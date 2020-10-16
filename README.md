@@ -1,31 +1,30 @@
-<h2>LMS#loan-service APIs</h2>
-<br>created date: 03 12, 2019, by SmartOSC Fintech | LMS team
+<h2>RVBB#customer-service APIs</h2>
+<br>created date: Oct 15, 2020, by RVBB | B2B team
 
 ********************************************************************************************************* 
 # Technology
-	> Spring Web
+	> Spring - GraphQl
 	> MongoDB
 	> MySQL
 	> Spring AOP
 	> Spring Data with 
-	> Swagger 2
-	> Spring Cloud config (client) -- next version
-	> Spring cloud bus amqp -- next version
+	> Swagger 2	
 
 ### Features
-	* Loan Management
+	* Customer Management
 
 ### Integration
 	* Auth-Services
-	* other
+	* Payment
+	* CCC
+	* Logistis	
 
 ### Docker build
-	docker build -t lms/loan-service:v1.0.0 .
-	docker tag lms/loan-service:v1.0.0 registry.developer.smartosc.vn/lms/loan-service:v1.0.0
-	docker push registry.developer.smartosc.vn/lms/loan-service:v1.0.0
+	docker build -t b2b/customer-service:1.0 .
+	docker tag b2b/customer-service:1.0 apphub.rvbb.vn/b2b/customer-service:1.0
+	docker push apphub.rvbb.vn/b2b2/customer-service:1.0
 
 ### Configuration & data
-
 	+ [configuration] use K8s ConfigMap
 
 ### Unit Test

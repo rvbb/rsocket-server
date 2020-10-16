@@ -1,3 +1,3 @@
-docker build --no-cache -t lms/loan-service:v1.0.0 .
-docker tag lms/loanmng-services:v1.0.0 registry.developer.smartosc.vn/lms/loan-service:v1.0.0
-docker push registry.developer.smartosc.vn/lending/loan-service:v1.0.0
+docker build -t b2b/customer-service:1.0 .
+docker tag b2b/customer-service:1.0 apphub.rvbb.vn/b2b/customer-service:1.0
+docker push apphub.rvbb.vn/b2b2/customer-service:1.0

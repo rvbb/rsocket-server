@@ -11,4 +11,4 @@ pluginManagement {
         }
     }
 }
-rootProject.name = 'loan-service'
+rootProject.name = 'customer-service'
