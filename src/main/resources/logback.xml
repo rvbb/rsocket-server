@@ -52,7 +52,7 @@
 		</encoder>
 	</appender>
 
-	<logger name="com.smartoscfintech.p2plending.lms.backend.loan"
+	<logger name="com.rvbb.b2b.backend.customer"
 		level="DEBUG" additivity="false">
 		<appender-ref ref="appLog" />
 		<appender-ref ref="console" />

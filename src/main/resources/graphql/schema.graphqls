@@ -1,3 +1,4 @@
+"""
 schema {
     query: QueryType
     mutation: MutationType
@@ -14,4 +15,13 @@ type MutationType {
 type Link {
   url: String!
   description: String!
+}
+"""
+
+schema {
+  query: Query
+}
+
+type Query {
+    yourName : String!
 }

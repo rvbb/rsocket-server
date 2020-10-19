@@ -1,5 +1,5 @@
 plugins {
-    id 'org.springframework.boot' version '2.2.4.RELEASE' //'1.5.8.RELEASE'
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
     id 'io.spring.dependency-management' version '1.0.10.RELEASE'
     id 'java'
     id 'idea'
@@ -11,24 +11,22 @@ sourceCompatibility = '1.8'
 
 repositories {
     maven { url 'https://repo.spring.io/plugins-release' }
-    maven { url 'https://repo.spring.io/milestone' }
-    maven { url 'https://repo.spring.io/snapshot' }
-    maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+   // maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
     jcenter()
     mavenCentral()
     maven { url "https://dl.bintray.com/graphql-java-kickstart/releases" }
-    maven { url "https://oss.jfrog.org/artifactory/oss-snapshot-local" }
 }
 
 dependencies {
+    implementation 'com.graphql-java-kickstart:graphql-spring-boot-starter:8.0.0'
+    runtimeOnly 'com.graphql-java-kickstart:graphiql-spring-boot-starter:8.0.0'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-
-    compile 'com.graphql-java:graphql-spring-boot-starter:5.0.2'
-    compile 'com.graphql-java:graphiql-spring-boot-starter:5.0.2'
-    compile 'com.graphql-java:graphql-java-tools:5.2.4'
+    runtimeOnly 'com.graphql-java-kickstart:altair-spring-boot-starter:8.0.0'
+    runtimeOnly 'com.graphql-java-kickstart:voyager-spring-boot-starter:8.0.0'
+    testImplementation 'com.graphql-java-kickstart:graphql-spring-boot-starter-test:8.0.0'
     compile(
             'org.springframework.integration:spring-integration-mqtt:5.1.6.RELEASE',
             'io.springfox:springfox-swagger2:2.9.2',
@@ -41,7 +39,8 @@ dependencies {
             'org.apache.httpcomponents:httpclient:4.5.10',
             "org.json:json:20190722",
             'commons-io:commons-io:2.6',
-            'mysql:mysql-connector-java:8.0.21'
+            'mysql:mysql-connector-java:8.0.21',
+            'com.graphql-java-kickstart:graphql-java-tools:5.3.4'
     )
     compile("org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE")
     compile("org.springframework.boot:spring-boot-starter-web")
@@ -59,9 +58,9 @@ test {
 
 task fatJar(type: Jar) {
     manifest {
-        def manifest = attributes 'Implementation-Title': 'SmartOSC Fintech P2P-Lending | LMS Backend | Loan Management Services',
+        def manifest = attributes 'Implementation-Title': 'SmartOSC Fintech P2P-Lending | LMS Backend | Customer Management Services',
                 'Implementation-Version': project.version,
-                'Main-Class': 'com.smartoscfintech.p2plending.lms.backend.loan.LoanApplication'
+                'Main-Class': 'om.rvbb.b2b.backend.customer'
         manifest
     }
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
