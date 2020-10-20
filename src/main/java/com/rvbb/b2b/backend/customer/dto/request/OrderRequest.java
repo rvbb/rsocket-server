@@ -12,11 +12,13 @@ import java.sql.Timestamp;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Order {
+public class DetailOrder {
 
 	private Timestamp orderDate;
 
 	private Double total;
+
+	private Customer customer;
 
 	@Override
 	public String toString() {
