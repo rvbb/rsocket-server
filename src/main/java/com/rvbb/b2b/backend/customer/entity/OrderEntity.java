@@ -6,25 +6,25 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.json.JSONObject;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.Date;
 
 @Setter @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "order")
+@Table(name = "order_demo")
 public class OrderEntity {
 
     @Id
     @GeneratedValue
     private Long id;
 
+    @Column(name="order_date")
     private Timestamp orderDate;
 
+    @Column(name="total")
     private Double total;
 
     @Override

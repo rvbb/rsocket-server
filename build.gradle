@@ -3,6 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.10.RELEASE'
     id 'java'
     id 'idea'
+    id 'org.jetbrains.kotlin.jvm' version '1.3.70'
 }
 
 group = 'com.rvbb.b2b.backend.customer'
@@ -11,7 +12,6 @@ sourceCompatibility = '1.8'
 
 repositories {
     maven { url 'https://repo.spring.io/plugins-release' }
-   // maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
     jcenter()
     mavenCentral()
     maven { url "https://dl.bintray.com/graphql-java-kickstart/releases" }
@@ -28,9 +28,6 @@ dependencies {
     runtimeOnly 'com.graphql-java-kickstart:voyager-spring-boot-starter:8.0.0'
     testImplementation 'com.graphql-java-kickstart:graphql-spring-boot-starter-test:8.0.0'
     compile(
-            'org.springframework.integration:spring-integration-mqtt:5.1.6.RELEASE',
-            'io.springfox:springfox-swagger2:2.9.2',
-            'io.springfox:springfox-swagger-ui:2.9.2',
             'org.mockito:mockito-junit-jupiter:2.23.0',
             'org.springframework:spring-aop:5.2.2.RELEASE',
             'org.aspectj:aspectjweaver:1.9.2',

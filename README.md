@@ -34,3 +34,6 @@
 	gradlew test --tests full_package_and_ClassName
 	gradlew build test --tests *ClassName --> to test one or some classes  
 	Browse APIs via swagger: http://localhost:8080/swagger-ui.html#
+
+### Reference Docs
+    https://github.com/graphql-java-kickstart/graphql-spring-boot/blob/master/README.md

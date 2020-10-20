@@ -3,7 +3,7 @@ package com.rvbb.b2b.backend.customer.dto;
 import com.rvbb.b2b.backend.customer.util.IConst;
 import com.rvbb.b2b.backend.customer.util.JsonUtils;
 
-import io.swagger.annotations.ApiModelProperty;
+//import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -19,13 +19,13 @@ import lombok.ToString;
 @ToString
 public class Response<T> {
 
-	@ApiModelProperty(notes = "result of request: true/false")
+//	@ApiModelProperty(notes = "result of request: true/false")
 	private boolean success;
-	@ApiModelProperty(notes = "error code")
+//	@ApiModelProperty(notes = "error code")
 	private int code;
-	@ApiModelProperty(notes = "data of response")
+//	@ApiModelProperty(notes = "data of response")
 	private T data;
-	@ApiModelProperty(notes = "message")
+//	@ApiModelProperty(notes = "message")
 	private String message;
 
 	public static <T> Response<T> success(T data) {
