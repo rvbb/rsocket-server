@@ -9,6 +9,8 @@ import graphql.schema.GraphQLScalarType;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -28,7 +30,7 @@ public class DateScalarConfig {
                     public String serialize(final Object dataFetcherResult) {
                         if (dataFetcherResult instanceof LocalDate || dataFetcherResult instanceof Date) {
                             return dataFetcherResult.toString();
-                        }else {
+                        } else {
                             throw new CoercingSerializeException("Expected a LocalDate object.");
                         }
                     }
@@ -49,10 +51,11 @@ public class DateScalarConfig {
 
                     @Override
                     public LocalDate parseLiteral(final Object input) {
-                        if (input instanceof StringValue) {
+                        if (input instanceof String || input instanceof StringValue) {
                             try {
-                                return LocalDate.parse(((StringValue) input).getValue());
-                            } catch (DateTimeParseException e) {
+                                SimpleDateFormat simpleDateFormat = new SimpleDateFormat();
+                                return DateScalarConfig.of(simpleDateFormat.parse(String.valueOf(input)));
+                            } catch (DateTimeParseException | ParseException e) {
                                 throw new CoercingParseLiteralException(e);
                             }
                         } else {

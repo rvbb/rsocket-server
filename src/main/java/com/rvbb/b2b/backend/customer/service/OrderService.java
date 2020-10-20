@@ -1,16 +1,15 @@
 package com.rvbb.b2b.backend.customer.service;
 
-import java.util.Date;
-import java.util.List;
-
-import com.rvbb.b2b.backend.customer.dto.Customer;
+import com.rvbb.b2b.backend.customer.dto.request.OrderRequest;
 import com.rvbb.b2b.backend.customer.entity.CustomerEntity;
+import com.rvbb.b2b.backend.customer.entity.OrderEntity;
+import com.rvbb.b2b.backend.customer.exception.NotFoundException;
 import com.rvbb.b2b.backend.customer.repository.IOrderRepository;
-import com.rvbb.b2b.backend.customer.dto.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.rvbb.b2b.backend.customer.entity.OrderEntity;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class OrderService {
@@ -18,11 +17,16 @@ public class OrderService {
 	@Autowired 
 	private IOrderRepository repository;
 
-	public OrderEntity insertOne(Order dto) {
+	public OrderEntity insertOne(OrderRequest dto) {
 		return repository.save(toEntity(dto));
 	}
 
-	public OrderEntity update(Order customer, Long id) {
+	public OrderEntity getOne(Long id) {
+		Optional<OrderEntity> order = repository.findById(id);
+		return order.orElseThrow(() -> new NotFoundException("Order with id: " + id + " could not discovered"));
+	}
+
+	public OrderEntity update(OrderRequest customer, Long id) {
 		OrderEntity entity = toEntity(customer);
 		entity.setId(id);
 		return repository.save(entity);
@@ -33,13 +37,14 @@ public class OrderService {
 	}
 
 	public void delete(Long id) {
-		repository.deleteById(String.valueOf(id));
+		repository.deleteById(id);
 	}
 
-	private OrderEntity toEntity(Order dto) {
+	private OrderEntity toEntity(OrderRequest dto) {
 		OrderEntity entity = new OrderEntity();
 		entity.setOrderDate(dto.getOrderDate());
 		entity.setTotal(dto.getTotal());
+		entity.setCustomerId(dto.getCustomerId());
 		return entity;
 	}
 

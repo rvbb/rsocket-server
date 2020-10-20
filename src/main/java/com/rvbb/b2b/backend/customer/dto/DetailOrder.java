@@ -1,24 +1,26 @@
 package com.rvbb.b2b.backend.customer.dto;
 
-import lombok.AllArgsConstructor;
+import com.rvbb.b2b.backend.customer.dto.response.CustomizedCustomerResponse;
+import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.json.JSONObject;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
+@Builder
 @Setter
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class Order {
+public class DetailOrder {
 
-	private Timestamp orderDate;
+	private Long id;
 
-	private Double total;
+	private Date orderDate;
 
-	private Customer customer;
+	private Float total;
+
+//	private Customer customer; -- unknow error: two classes return tu Customer
+	private CustomizedCustomerResponse cust;
 
 	@Override
 	public String toString() {

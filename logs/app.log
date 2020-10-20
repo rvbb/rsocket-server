@@ -285,3 +285,84 @@ com.rvbb.b2b.backend.customer.exception.NotFoundException: Customer with id: 105
 2020-10-20 15:03:44,834 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-4] End: 
 2020-10-20 15:03:55,807 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-3] API called= http://localhost:20200/customer-management?null. Message= 
 2020-10-20 15:03:55,815 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-3] End: 
+2020-10-20 15:15:50,508 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 11272 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:15:50,510 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:15:50,510 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:37:54,138 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 9052 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:37:54,140 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:37:54,140 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:39:19,212 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 7980 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:39:19,214 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:39:19,214 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:40:56,132 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 11004 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:40:56,134 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:40:56,135 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:43:05,690 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 9948 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:43:05,692 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:43:05,693 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:44:39,925 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 3088 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:44:39,928 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:44:39,928 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:51:06,119 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 6436 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:51:06,121 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:51:06,121 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:54:10,857 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 1552 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:54:10,860 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:54:10,860 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:55:18,327 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 1580 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:55:18,330 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:55:18,330 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:55:39,846 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 13444 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:55:39,848 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:55:39,849 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 15:57:29,190 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 7872 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 15:57:29,192 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 15:57:29,193 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 16:00:34,555 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 7912 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 16:00:34,557 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 16:00:34,557 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 16:13:35,174 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 8620 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 16:13:35,176 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 16:13:35,176 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 16:13:39,546 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.59 seconds (JVM running for 5.005)
+2020-10-20 17:37:22,702 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 9292 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 17:37:22,705 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 17:37:22,705 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 17:37:27,101 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.618 seconds (JVM running for 5.026)
+2020-10-20 17:39:09,411 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 14604 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 17:39:09,414 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 17:39:09,414 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 17:39:13,844 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.652 seconds (JVM running for 5.069)
+2020-10-20 17:45:18,679 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 7496 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 17:45:18,681 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 17:45:18,682 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 17:45:53,189 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 5932 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 17:45:53,191 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 17:45:53,191 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 17:47:05,950 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 11800 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 17:47:05,952 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 17:47:05,952 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 17:47:27,484 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 10836 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 17:47:27,486 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 17:47:27,487 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 17:47:31,896 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.63 seconds (JVM running for 5.036)
+2020-10-20 17:47:39,945 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-2] API called= http://localhost:20200/customer-management?null. Message= 
+2020-10-20 17:47:39,993 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-2] End: 
+2020-10-20 17:49:25,100 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 8880 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 17:49:25,102 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 17:49:25,102 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 17:49:29,529 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.649 seconds (JVM running for 5.059)
+2020-10-20 17:55:50,024 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 9148 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 17:55:50,026 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 17:55:50,027 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 17:55:54,956 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 5.175 seconds (JVM running for 5.591)
+2020-10-20 17:57:03,847 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 3612 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 17:57:03,849 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 17:57:03,850 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 18:02:43,467 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 14580 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 18:02:43,469 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 18:02:43,469 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 18:03:35,506 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 13512 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-20 18:03:35,508 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-20 18:03:35,508 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-20 18:03:39,897 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.608 seconds (JVM running for 5.014)

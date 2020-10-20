@@ -1,27 +1,15 @@
-package com.rvbb.b2b.backend.customer.dto;
+package com.rvbb.b2b.backend.customer.dto.request;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.json.JSONObject;
+import lombok.*;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
+@Builder
 @Setter
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class DetailOrder {
+public class OrderRequest {
 
-	private Timestamp orderDate;
-
-	private Double total;
-
-	private Customer customer;
-
-	@Override
-	public String toString() {
-		return new JSONObject(this).toString();
-	}
+	private Date orderDate;
+	private Float total;
+	private Long customerId;
 }

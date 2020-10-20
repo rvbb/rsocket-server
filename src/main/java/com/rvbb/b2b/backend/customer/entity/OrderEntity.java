@@ -7,7 +7,6 @@ import lombok.Setter;
 import org.json.JSONObject;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 import java.util.Date;
 
 @Setter @Getter
@@ -22,13 +21,13 @@ public class OrderEntity {
     private Long id;
 
     @Column(name="order_date")
-    private Timestamp orderDate;
+    private Date orderDate;
 
     @Column(name="total")
-    private Double total;
+    private Float total;
 
-    @Column(name="customer")
-    private CustomerEntity customer;
+    @Column(name="customerId")
+    private Long customerId;
 
     @Override
     public String toString() {
