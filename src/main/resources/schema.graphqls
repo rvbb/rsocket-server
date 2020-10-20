@@ -1,0 +1,33 @@
+scalar Date
+
+schema {
+  query: Query
+  mutation: Mutation
+  #subscriptuion: Subscription
+}
+
+type Query {
+    hello(who: String): String!
+    getCustomerOne(id: ID!): Customer!
+    getCustomers: [Customer]
+}
+
+type Mutation {
+    createOneCustomer( name: String! phone: String age: Int): Customer
+    updateOneCustomer( name: String! phone: String age: Int, id: ID!): Customer
+    #createOneCustomerFromDto( customerRequest: CustomerReq! ): Customer!
+    #not work for input type in method
+}
+
+type Customer {
+    id: ID
+    name: String!
+    phone: String
+    age: Int
+    created: Date
+    #aa: String - this field will make error if not has corresponding Resolver
+}
+#type CustomerReq {
+#   name: String!
+#    phone: String
+#}

@@ -22,8 +22,10 @@ public class CustomerService {
 	}
 
 	public CustomerEntity update(Customer customer, Long id) {
-		CustomerEntity entity = toEntity(customer);
-		entity.setId(id);
+		CustomerEntity entity = getCustomerById(id);
+		entity.setName(customer.getName());
+		entity.setAge(customer.getAge());
+		entity.setPhone(customer.getPhone());
 		return repository.save(entity);
 	}
 

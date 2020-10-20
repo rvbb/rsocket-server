@@ -27,6 +27,9 @@ public class OrderEntity {
     @Column(name="total")
     private Double total;
 
+    @Column(name="customer")
+    private CustomerEntity customer;
+
     @Override
     public String toString() {
         return new JSONObject(this).toString();

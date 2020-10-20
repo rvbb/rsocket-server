@@ -6,12 +6,12 @@ import java.util.stream.Stream;
 
 public interface IConst {
 
-	public static Map<Integer, String> BANKLISTDEMO_TYPES = Stream
+	Map<Integer, String> BANKLISTDEMO_TYPES = Stream
 			.of(new Object[][] { { 1, "private" }, { 2, "public"}, })
 			.collect(Collectors.toMap(data -> (Integer) data[0], data -> (String) data[1]));
 
-	public static String LOGGER_REQUEST_URL = "url not recognized";
+	String LOGGER_REQUEST_URL = "url not recognized";
 
-	public static String RESPONSE_OK = "OK";
-	public static String RESPONSE_UNKNOWN = "Unknown";
+	String RESPONSE_OK = "OK";
+	String RESPONSE_UNKNOWN = "Unknown";
 }

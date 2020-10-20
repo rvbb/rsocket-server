@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 /*use GraphQLResolver for any extension fields*/
 @Slf4j
-@Component
+//@Component
 public class CustomerExtensionFieldsResolver /*implements GraphQLResolver<CustomerEntity> */{
 
     public String extensionFieldNeedToResolve() {

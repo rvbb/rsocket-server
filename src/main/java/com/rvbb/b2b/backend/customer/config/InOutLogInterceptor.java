@@ -9,6 +9,7 @@ import org.springframework.util.StreamUtils;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 @Slf4j
 public class InOutLogInterceptor implements ClientHttpRequestInterceptor {
@@ -31,7 +32,7 @@ public class InOutLogInterceptor implements ClientHttpRequestInterceptor {
             log.debug("URI         : {}", request.getURI());
             log.debug("Method      : {}", request.getMethod());
             log.debug("Headers     : {}", request.getHeaders());
-            log.debug("Request_Body: {}", new String(body, "UTF-8"));
+            log.debug("Request_Body: {}", new String(body, StandardCharsets.UTF_8));
             log.debug(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>request end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         }
     }
