@@ -30,6 +30,9 @@ dependencies {
     runtimeOnly 'com.graphql-java-kickstart:voyager-spring-boot-starter:8.0.0'
     testImplementation 'com.graphql-java-kickstart:graphql-spring-boot-starter-test:8.0.0'
     implementation 'com.google.guava:guava:26.0-jre'
+
+    //subscription type
+    implementation 'io.projectreactor:reactor-core'
     compile(
 
             'com.graphql-java-kickstart:graphql-java-tools:6.2.0',

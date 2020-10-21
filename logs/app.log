@@ -366,3 +366,28 @@ com.rvbb.b2b.backend.customer.exception.NotFoundException: Customer with id: 105
 2020-10-20 18:03:35,508 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
 2020-10-20 18:03:35,508 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
 2020-10-20 18:03:39,897 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.608 seconds (JVM running for 5.014)
+2020-10-21 14:17:58,675 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 16824 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-21 14:17:58,677 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-21 14:17:58,678 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-21 14:18:36,433 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 5244 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-21 14:18:36,435 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-21 14:18:36,435 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-21 14:18:40,983 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.773 seconds (JVM running for 5.178)
+2020-10-21 14:24:45,682 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-3] API called= http://localhost:20200/customer-management?null. Message= 
+2020-10-21 14:24:47,686 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-3] End: 
+2020-10-21 14:44:34,101 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 12848 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-21 14:44:34,103 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-21 14:44:34,104 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-21 14:44:38,526 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.648 seconds (JVM running for 5.066)
+2020-10-21 14:45:21,996 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-1] API called= http://localhost:20200/customer-management?null. Message= 
+2020-10-21 14:45:22,008 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-1] End: 
+2020-10-21 15:06:32,591 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 7280 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
+2020-10-21 15:06:32,593 DEBUG com.rvbb.b2b.backend.customer.CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-21 15:06:32,594 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-21 15:06:37,288 INFO com.rvbb.b2b.backend.customer.CustomerApplication [main] Started CustomerApplication in 4.935 seconds (JVM running for 5.366)
+2020-10-21 16:31:13,465 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-1] Start:  
+2020-10-21 16:31:13,466 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-1] End: 
+2020-10-21 16:32:15,047 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-2] Start:  
+2020-10-21 16:32:15,047 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-2] End: 
+2020-10-21 16:32:18,736 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-4] Start:  
+2020-10-21 16:32:18,737 INFO com.rvbb.b2b.backend.customer.config.SMFLoggerConfig [http-nio-20200-exec-4] End: 

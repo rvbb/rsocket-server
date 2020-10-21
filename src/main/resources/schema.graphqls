@@ -3,7 +3,17 @@ scalar Date
 schema {
   query: Query
   mutation: Mutation
-  #subscriptuion: Subscription
+  subscription: Subscription
+}
+
+type Subscription {
+    randomInt: Int!
+    newsFeedSubscribe: NewsFeed
+}
+
+type NewsFeed {
+    randomId: Int!
+    createdDate: Date!
 }
 
 type Query {
