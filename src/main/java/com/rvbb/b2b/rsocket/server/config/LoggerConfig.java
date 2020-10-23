@@ -1,77 +1,44 @@
 package com.rvbb.b2b.rsocket.server.config;
 
-import com.rvbb.b2b.rsocket.server.util.IConst;
-import com.rvbb.b2b.rsocket.server.util.SMFLogger;
-import org.apache.commons.lang3.StringUtils;
-import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.AfterThrowing;
+import lombok.extern.slf4j.Slf4j;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.reflect.MethodSignature;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
+import reactor.core.publisher.Mono;
 
-import javax.servlet.http.HttpServletRequest;
-import java.lang.reflect.Method;
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicReference;
 
 @Aspect
 @Configuration
+@Slf4j
 public class LoggerConfig {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(LoggerConfig.class);
-
-	@Before("within(com.rvbb.b2b.rsocket.server..*) "
-			+ "&& @annotation(com.rvbb.b2b.rsocket.server.util.SMFLogger)")
-	public void writeLogBefore(JoinPoint joinPoint) throws NoSuchMethodException {
-		String url = getRequestUrl();
-		if(!IConst.LOGGER_REQUEST_URL.equals(url)) {
-			LOGGER.info("API called= {}. Message= {}", url, this.getMessage(joinPoint));	
-		}else {
-			LOGGER.info("Start:  {}", this.getMessage(joinPoint));
-		}
-	}
-
-	@AfterReturning("within(com.rvbb.b2b.rsocket.server..*)"
-			+ " && @annotation(com.rvbb.b2b.rsocket.server.util.SMFLogger)")
-	public void writeLogAfterReturn(JoinPoint joinPoint) throws NoSuchMethodException {
-		LOGGER.info("End: {}", this.getMessage(joinPoint));
-	}
-
-	@AfterThrowing(value = "within(com.rvbb.b2b.rsocket.server..*) "
-			+ "&& @annotation(com.rvbb.b2b.rsocket.server.util.SMFLogger)", throwing = "e")
-	public void writeLogAfterThrow(JoinPoint joinPoint, Exception e) throws NoSuchMethodException {
-		LOGGER.error("Exeption in process", e);
-		LOGGER.info("Failed: {}", this.getMessage(joinPoint));
-	}
-
-	private String getMessage(JoinPoint joinPoint) throws NoSuchMethodException {
-		Method interfaceMethod = ((MethodSignature) joinPoint.getSignature()).getMethod();
-		Method implementationMethod = joinPoint.getTarget().getClass().getMethod(interfaceMethod.getName(),
-				interfaceMethod.getParameterTypes());
-		String message = null;
-		if (implementationMethod.isAnnotationPresent(SMFLogger.class)) {
-			SMFLogger logger = implementationMethod.getAnnotation(SMFLogger.class);
-			message = logger.message();
-		}
-		return message;
-	}
-
-	private String getRequestUrl() {
-		try {
-			HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes())
-					.getRequest();
-			String url = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
-					+ request.getContextPath() + request.getRequestURI();
-			if (StringUtils.isEmpty(request.getQueryString())) {
-				url += "?" + request.getQueryString();
-			}
-			return url;
-		} catch (Exception e) {
-			return IConst.LOGGER_REQUEST_URL;
-		}
-	}
+    /*https://medium.com/@azizulhaq.ananto/how-to-handle-logs-and-tracing-in-spring-webflux-and-microservices-a0b45adc4610*/
+    @Around("@annotation(com.rvbb.b2b.rsocket.server.util.Logger)")
+    public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
+        long start = System.currentTimeMillis();
+        Object result = joinPoint.proceed();
+        if (result instanceof Mono) {
+            Mono monoResult = (Mono) result;
+            return monoResult
+                    .doOnSuccess(o -> {
+                        Object response = "";
+                        if (Objects.nonNull(o)) {
+                            response = o.toString();
+                        }
+                        log.info("Enter: {}.{}() with argument[s] = {}",
+                                joinPoint.getSignature().getDeclaringTypeName(), joinPoint.getSignature().getName(),
+                                joinPoint.getArgs());
+                        log.info("Exit: {}.{}() had arguments = {}, with result = {}, Execution time = {} ms",
+                                joinPoint.getSignature().getDeclaringTypeName(), joinPoint.getSignature().getName(),
+                                joinPoint.getArgs()[0],
+                                response, (System.currentTimeMillis() - start));
+                    });
+        } else {
+            log.debug("joinPoint is not mono, it =[{}]", joinPoint);
+            return "";
+        }
+    }
 }

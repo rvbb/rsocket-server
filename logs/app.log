@@ -1,34 +1,25 @@
-2020-10-22 11:44:56,436 INFO CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 18180 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
-2020-10-22 11:44:56,441 DEBUG CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-10-22 11:44:56,442 INFO CustomerApplication [main] No active profile set, falling back to default profiles: default
-2020-10-22 11:45:01,039 INFO CustomerApplication [main] Started CustomerApplication in 4.825 seconds (JVM running for 5.242)
-2020-10-22 11:46:52,152 INFO SMFLoggerConfig [http-nio-20200-exec-1] API called= http://localhost:20200/customer-management?null. Message=
-2020-10-22 11:46:52,165 INFO SMFLoggerConfig [http-nio-20200-exec-1] End:
-2020-10-22 11:47:43,303 INFO SMFLoggerConfig [http-nio-20200-exec-7] Start:
-2020-10-22 11:47:43,304 INFO SMFLoggerConfig [http-nio-20200-exec-7] End:
-2020-10-22 14:54:58,244 INFO CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 13636 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
-2020-10-22 14:54:58,246 DEBUG CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-10-22 14:54:58,246 INFO CustomerApplication [main] No active profile set, falling back to default profiles: default
-2020-10-22 14:55:02,834 INFO CustomerApplication [main] Started CustomerApplication in 4.812 seconds (JVM running for 5.246)
-2020-10-22 16:31:44,573 INFO CustomerApplication [main] Starting CustomerApplication on hoangnv2 with PID 5640 (Z:\code\mine\customer-service\build\classes\java\main started by Hoang N.V in Z:\code\mine\customer-service)
-2020-10-22 16:31:44,576 DEBUG CustomerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-10-22 16:31:44,576 INFO CustomerApplication [main] No active profile set, falling back to default profiles: default
-2020-10-22 16:31:49,551 INFO CustomerApplication [main] Started CustomerApplication in 5.203 seconds (JVM running for 5.627)
-2020-10-22 16:32:33,550 INFO SMFLoggerConfig [http-nio-20200-exec-1] Start:
-2020-10-22 16:32:33,563 INFO SMFLoggerConfig [http-nio-20200-exec-1] End:
-2020-10-22 19:08:51,727 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Starting RSocketServerApplication on hoangnv2 with PID 16268 (Z:\code\mine\rsocket-client\build\classes\java\main started by Hoang N.V in Z:\code\mine\rsocket-client)
-2020-10-22 19:08:51,731 DEBUG com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-10-22 19:08:51,732 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] No active profile set, falling back to default profiles: default
-2020-10-22 19:08:59,618 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Started RSocketServerApplication in 8.459 seconds (JVM running for 9.147)
-2020-10-22 21:57:07,261 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Starting RSocketServerApplication on hoangnv2 with PID 5460 (Z:\code\mine\rsocket-server\build\classes\java\main started by Hoang N.V in Z:\code\mine\rsocket-server)
-2020-10-22 21:57:07,262 DEBUG com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-10-22 21:57:07,262 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] No active profile set, falling back to default profiles: default
-2020-10-22 21:57:12,777 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Started RSocketServerApplication in 5.978 seconds (JVM running for 7.214)
-2020-10-22 22:00:31,657 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Starting RSocketServerApplication on hoangnv2 with PID 17924 (Z:\code\mine\rsocket-server\build\classes\java\main started by Hoang N.V in Z:\code\mine\rsocket-server)
-2020-10-22 22:00:31,659 DEBUG com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-10-22 22:00:31,659 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] No active profile set, falling back to default profiles: default
-2020-10-22 22:00:36,143 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Started RSocketServerApplication in 4.75 seconds (JVM running for 5.564)
-2020-10-22 22:38:17,844 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Starting RSocketServerApplication on hoangnv2 with PID 16556 (Z:\code\mine\rsocket-server\build\classes\java\main started by Hoang N.V in Z:\code\mine\rsocket-server)
-2020-10-22 22:38:17,846 DEBUG com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
-2020-10-22 22:38:17,847 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] No active profile set, falling back to default profiles: default
-2020-10-22 22:38:23,146 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Started RSocketServerApplication in 5.575 seconds (JVM running for 6.052)
+2020-10-23 09:33:18,207 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Starting RSocketServerApplication on hoangnv2 with PID 11420 (Z:\code\mine\rsocket-server\build\classes\java\main started by Hoang N.V in Z:\code\mine\rsocket-server)
+2020-10-23 09:33:18,212 DEBUG com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-23 09:33:18,212 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-23 09:33:22,524 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Started RSocketServerApplication in 4.535 seconds (JVM running for 4.945)
+2020-10-23 14:16:08,569 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Starting RSocketServerApplication on hoangnv2 with PID 14216 (Z:\code\mine\rsocket-server\build\classes\java\main started by Hoang N.V in Z:\code\mine\rsocket-server)
+2020-10-23 14:16:08,575 DEBUG com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-23 14:16:08,575 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-23 14:16:15,180 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Started RSocketServerApplication in 7.003 seconds (JVM running for 7.626)
+2020-10-23 14:27:14,554 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Starting RSocketServerApplication on hoangnv2 with PID 9328 (Z:\code\mine\rsocket-server\build\classes\java\main started by Hoang N.V in Z:\code\mine\rsocket-server)
+2020-10-23 14:27:14,556 DEBUG com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-23 14:27:14,556 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-23 14:27:19,796 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Started RSocketServerApplication in 5.453 seconds (JVM running for 5.865)
+2020-10-23 14:51:33,631 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Starting RSocketServerApplication on hoangnv2 with PID 14436 (Z:\code\mine\rsocket-server\build\classes\java\main started by Hoang N.V in Z:\code\mine\rsocket-server)
+2020-10-23 14:51:33,633 DEBUG com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-23 14:51:33,634 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-23 14:51:37,988 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Started RSocketServerApplication in 4.573 seconds (JVM running for 4.98)
+2020-10-23 16:07:04,457 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Starting RSocketServerApplication on hoangnv2 with PID 16368 (Z:\code\mine\rsocket-server\build\classes\java\main started by Hoang N.V in Z:\code\mine\rsocket-server)
+2020-10-23 16:07:04,459 DEBUG com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-10-23 16:07:04,460 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] No active profile set, falling back to default profiles: default
+2020-10-23 16:07:08,640 INFO com.rvbb.b2b.rsocket.server.RSocketServerApplication [main] Started RSocketServerApplication in 4.445 seconds (JVM running for 4.933)
+2020-10-23 16:32:30,117 INFO com.rvbb.b2b.rsocket.server.controller.RSocketServerController [reactor-http-nio-1] createdCustomer={"phone":"12345","created":"Fri Oct 23 16:32:30 ICT 2020","name":"Mr A","id":14,"age":23}
+2020-10-23 17:15:11,012 INFO com.rvbb.b2b.rsocket.server.controller.RSocketServerController [reactor-http-nio-1] createdCustomer={"phone":"12345","created":"Fri Oct 23 17:15:11 ICT 2020","name":"Mr A","id":15,"age":23}
+2020-10-23 17:16:52,218 INFO com.rvbb.b2b.rsocket.server.controller.RSocketServerController [reactor-http-nio-1] createdCustomer={"phone":"12345","created":"Fri Oct 23 17:16:52 ICT 2020","name":"Mr A","id":16,"age":23}
+2020-10-23 17:22:42,553 INFO com.rvbb.b2b.rsocket.server.controller.RSocketServerController [reactor-http-nio-1] createdCustomer={"phone":"12345","created":"Fri Oct 23 17:22:42 ICT 2020","name":"Mr A","id":17,"age":23}
+2020-10-23 17:22:51,405 INFO com.rvbb.b2b.rsocket.server.controller.RSocketServerController [reactor-http-nio-1] createdCustomer={"phone":"12345","created":"Fri Oct 23 17:22:51 ICT 2020","name":"Mr A","id":18,"age":23}

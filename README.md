@@ -3,7 +3,7 @@
 
 ********************************************************************************************************* 
 # Technology
-	> Spring - GraphQl
+	> Spring Webflux
 	> MongoDB
 	> MySQL
 	> Spring AOP

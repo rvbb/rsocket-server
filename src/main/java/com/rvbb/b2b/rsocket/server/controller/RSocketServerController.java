@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -16,8 +17,16 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.Random;
 
+/**
+ * Communication Type:
+ * request/response (stream of 1)
+ * request/stream (finite stream of many)
+ * fire-and-forget (no response)
+ * channel (bi-directional streams)
+ **/
 @Slf4j
 @Controller
+//@RequestMapping(path = "/rsocket-server") --> this may make error
 public class RSocketServerController {
 
     @Autowired
@@ -26,14 +35,14 @@ public class RSocketServerController {
     /*Request & Response*/
     @MessageMapping("getCustomer")
     public Mono<CustomerEntity> currentMarketData(Long id) {
-        CustomerEntity customerEntity =  service.getCustomerById(id);
+        CustomerEntity customerEntity = service.getCustomerById(id);
         return Mono.just(customerEntity);
     }
 
     /*Fire then Forget*/
     @MessageMapping("addCustomer")
     public Mono<Void> addOneCustomer(Customer dto) {
-        CustomerEntity createdCustomer =  service.insert(dto);
+        CustomerEntity createdCustomer = service.insert(dto);
         log.info("createdCustomer={}", createdCustomer);
         return Mono.empty();
     }
@@ -41,7 +50,7 @@ public class RSocketServerController {
     /*stream*/
     @MessageMapping("feedCustomer")
     public Flux<CustomerEntity> feedCustomer(Long id) {
-        CustomerEntity customerEntity =  service.getCustomerById(id);
+        CustomerEntity customerEntity = service.getCustomerById(id);
         return Flux.just(customerEntity);
     }
 
