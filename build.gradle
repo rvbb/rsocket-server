@@ -13,7 +13,6 @@ repositories {
     jcenter()
     mavenCentral()
     maven { url "https://jcenter.bintray.com" }
-    maven { url "https://dl.bintray.com/graphql-java-kickstart/releases" }
     maven { url 'https://repo.spring.io/plugins-release' }
 }
 
@@ -24,9 +23,6 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-    runtimeOnly 'com.graphql-java-kickstart:altair-spring-boot-starter:8.0.0'
-    runtimeOnly 'com.graphql-java-kickstart:voyager-spring-boot-starter:8.0.0'
-    testImplementation 'com.graphql-java-kickstart:graphql-spring-boot-starter-test:8.0.0'
     implementation 'com.google.guava:guava:26.0-jre'
 
     //subscription type
